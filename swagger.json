@@ -5,7 +5,7 @@
     "description": "CRUD Project Manager ",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse-341-w05-w08.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
