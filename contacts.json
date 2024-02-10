@@ -1,0 +1,24 @@
+
+[
+    {
+      "firstName": "Lindy",
+      "lastName": "Moes",
+      "email": "lindygmoes@gmail.com",
+      "favoriteColor": "seafoam green",
+      "birthday": "01/04/1991"
+    },
+    {
+      "firstName": "Edward",
+      "lastName": "Moes",
+      "email": "imoe61@gmail.com",
+      "favoriteColor": "blue",
+      "birthday": "02/17/2021"
+    },
+    {
+      "firstName": "Maxwell",
+      "lastName": "Moes",
+      "email": "imoe61@gmail.com",
+      "favoriteColor": "green",
+      "birthday": "12/19/2022"
+    }
+]

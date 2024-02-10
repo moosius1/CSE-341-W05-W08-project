@@ -1,0 +1,36 @@
+
+[{
+  
+      "name": "ASP Lifecycle Management",
+      "startDate": "8/30/2023",
+      "nextCheckIn": "2/12/2024",
+      "projectedCompletionDate": "3/01/2024",
+      "collabEnviornment": "https://miro.com/app/board/uXjVMpxH_ng=/",
+      "weeklyTimeRequirement": "4 hours",
+      "primaryDriver": "Ian Moes"
+      
+    },
+    {
+    
+      "name": "Case Progression Project",
+      "startDate": "2/28/2022",
+      "nextCheckIn": "TBD",
+      "projectedCompletionDate": "3/1/2023",
+      "collabEnviornment": "https://miro.com/app/board/uXjVOJRcAyM=/",
+      "weeklyTimeRequirement": "4 hours",
+      "primaryDriver": "Blake Prowse & Ian Moes"
+      
+    },
+    {
+    
+      "name": "NSE Activity Guides",
+      "startDate": "1/01/2024",
+      "nextCheckIn": "2/16/2024",
+      "projectedCompletionDate": "3/1/2024",
+      "collabEnviornment": "TBD",
+      "weeklyTimeRequirement": "4 hours",
+      "primaryDriver": "Aditya Kalania"
+      
+    
+  }]
+  
