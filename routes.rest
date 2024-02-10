@@ -1,0 +1,36 @@
+### get all test
+GET http://localhost:3000/projects
+
+### get single test
+GET http://localhost:3000/projects/65c701e969ff224d2827ff63
+
+### Create New Project test
+POST  http://localhost:3000/projects
+Content-Type: application/json
+
+{
+    "name":"Test",
+    "startDate":"01/01/2024",
+    "nextCheckIn":"01/03/2024",
+    "projectedCompletionDate":"01/04/2024",
+    "collabEnviornment":"test",
+    "weeklyTimeRequirement":"4",
+    "primaryDriver":"Ian Moes"
+}
+
+###
+PUT http://localhost:3000/projects/65c7ae6b00e495597da462d6 HTTP/1.1
+Content-Type:application/json
+
+{
+    "name":"NSE Activity Guides",
+    "startDate":"01/01/2024",
+    "nextCheckIn":"01/03/2024",
+    "projectedCompletionDate":"01/04/2024",
+    "collabEnviornment":"TBD",
+    "weeklyTimeRequirement":"4",
+    "primaryDriver":"Aditya Kalania"
+}
+
+###
+DELETE http://localhost:3000/projects/65c7adf700e495597da462d5
