@@ -58,7 +58,7 @@ const createNew = async (req, res) => {
       nextCheckIn,
       projectedCompletionDate,
       collabEnviornment: req.body.collabEnviornment,
-      weeklyTimeRequirement: req.body.weeklyTimeRequirement, // Potential typo? Check if this is correct
+      weeklyTimeRequirement: req.body.weeklyTimeRequirement, 
       primaryDriver: req.body.primaryDriver
     };
 
