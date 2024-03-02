@@ -12,7 +12,7 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   secret: 'a long, randomly-generated string stored in env',
-  baseURL: 'http://localhost:3000',
+  baseURL: 'https://cse-341-w05-w08.onrender.com',
   clientID: 'KIz1zOGx0sHsBjGo5J8rPx6Ps8jQgscR',
   issuerBaseURL: 'https://dev-ydwkfe60vah8pciu.us.auth0.com'
 };
