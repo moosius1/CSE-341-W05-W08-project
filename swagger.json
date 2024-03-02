@@ -2,8 +2,8 @@
   "swagger": "2.0",
   "info": {
     "title": "My API",
-    "description": "Temple API",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "description": "Project Management API"
   },
   "host": "cse-341-w05-w08.onrender.com",
   "basePath": "/",
@@ -45,9 +45,6 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
-                  "example": "any"
-                },
                 "startDate": {
                   "example": "any"
                 },
@@ -57,7 +54,13 @@
                 "projectedCompletionDate": {
                   "example": "any"
                 },
+                "name": {
+                  "example": "any"
+                },
                 "collabEnviornment": {
+                  "example": "any"
+                },
+                "weeklyTimeRequirement": {
                   "example": "any"
                 },
                 "primaryDriver": {
@@ -70,6 +73,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -115,9 +121,6 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
-                  "example": "any"
-                },
                 "startDate": {
                   "example": "any"
                 },
@@ -127,7 +130,13 @@
                 "projectedCompletionDate": {
                   "example": "any"
                 },
+                "name": {
+                  "example": "any"
+                },
                 "collabEnviornment": {
+                  "example": "any"
+                },
+                "weeklyTimeRequirement": {
                   "example": "any"
                 },
                 "primaryDriver": {
@@ -140,6 +149,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
