@@ -26,11 +26,11 @@ const getAll = async (req, res, next) =>{
     try{
 
     isAuthenticated(req, res, next);
-    
+
     const result = await mongodb.getDb().db("operationMeteor").collection('projects').find();
     
     result.toArray().then((lists)=>{
-        res.setHeader('Content-Type', 'application/json');
+        // res.setHeader('Content-Type', 'application/json');
         res.status(200).json(lists);
         console.log(lists);
     });
