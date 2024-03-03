@@ -5,9 +5,9 @@ const swaggerAutogen = require('swagger-autogen')();
 const doc = {
   swagger: '2.0', // Set the Swagger version to 2.0
   info: {
-    title: 'My API',
+    title: 'Project Management API',
     version: '1.0.0', // You can specify your own version here
-    description: 'Project Management API',
+    description: 'An API to create and track ongoing projects in an organization',
   },
   host: 'cse-341-w05-w08.onrender.com',
   schemes: ['https'],
