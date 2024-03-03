@@ -2,9 +2,31 @@ const { response } = require('express');
 const mongodb = require('../dbConnect');
 const bodyParser = require('body-parser');
 const ObjectId = require('mongodb').ObjectId;
+const { auth } = require('express-openid-connect');
+
+//Auth0 configuration (middleware)
+const authConfig = {
+    authRequired: false, // Set to true if authentication is required for all routes
+    auth0Logout: true,
+    secret: process.env.AUTH0_SECRET,
+    baseURL: process.env.BASE_URL,
+    clientID: process.env.AUTH0_CLIENT_ID,
+    issuerBaseURL: process.env.AUTH0_ISSUER_BASE_URL,
+    
+};
+
+const isAuthenticated = (req, res, next) => {
+    if (req.oidc.isAuthenticated()) {
+        return next();
+    }
+    res.status(401).json({ error: 'Unauthorized Please login'});
+};
 
 const getAll = async (req, res, next) =>{
     try{
+
+    isAuthenticated(req, res, next);
+    
     const result = await mongodb.getDb().db("operationMeteor").collection('projects').find();
     
     result.toArray().then((lists)=>{
