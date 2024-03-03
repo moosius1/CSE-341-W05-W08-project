@@ -62,7 +62,7 @@ PUT https://cse-341-w05-w08.onrender.com/projects/65cee47314d4f90bc398bce5 HTTP/
 Content-Type:application/json
 
 {
-    "name":"NSE Activity Guides",
+    "name":"Testing for PUT",
     "startDate":"02/19/2024",
     "nextCheckIn":"01/03/2024",
     "projectedCompletionDate":"01/04/2024",
@@ -73,15 +73,51 @@ Content-Type:application/json
 
 
 ###
-DELETE https://cse-341-w05-w08.onrender.com/projects/65c7d908271eff5cba00b16b
+DELETE https://cse-341-w05-w08.onrender.com/projects/65cee47314d4f90bc398bce5
+
+
+
+
+
+
 
 ### Create New contributor test
 POST  https://cse-341-w05-w08.onrender.com/contributors
 Content-Type: application/json
 
 {
-    "firstName":"Arthur",
+    "firstName":"Joshua",
     "lastName":"Moes",
-    "email":"poppop@cici.com"
+    "email":"brother@cici.com"
+   
+}
+
+### Delete newly created contributor
+DELETE  https://cse-341-w05-w08.onrender.com/contributors/65c7028e69ff224d2827ff69
+
+
+
+### get single test
+GET https://cse-341-w05-w08.onrender.com/contributors/65e40a86bd4ba5247b14ef94
+
+### update contributor test
+PUT https://cse-341-w05-w08.onrender.com/contributors/65e40a86bd4ba5247b14ef94 HTTP/1.1
+Content-Type:application/json
+
+{
+    "firstName":"Testing",
+    "lastName":"Moes",
+    "email":"moe20012@byui.edu"
+   
+}
+
+### update contributor test (Change back
+PUT https://cse-341-w05-w08.onrender.com/contributors/65e40a86bd4ba5247b14ef94 HTTP/1.1
+Content-Type:application/json
+
+{
+    "firstName":"Ian Arthur",
+    "lastName":"Moes",
+    "email":"ian.moes94@gmail.com"
    
 }

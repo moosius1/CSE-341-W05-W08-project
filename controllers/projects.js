@@ -143,7 +143,7 @@ const updateExisting = async (req,res) =>{
     if (result.modifiedCount > 0){
         res.status(204).send(result);
     } else {
-        res.status(500).json(result.error || 'Error while updating contact')
+        res.status(500).json(result.error || 'Error while updating project')
     }
 
 } catch (err) {
