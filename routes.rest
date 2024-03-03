@@ -75,3 +75,13 @@ Content-Type:application/json
 ###
 DELETE https://cse-341-w05-w08.onrender.com/projects/65c7d908271eff5cba00b16b
 
+### Create New contributor test
+POST  https://cse-341-w05-w08.onrender.com/contributors
+Content-Type: application/json
+
+{
+    "firstName":"Arthur",
+    "lastName":"Moes",
+    "email":"poppop@cici.com"
+   
+}

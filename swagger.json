@@ -178,7 +178,7 @@
         }
       }
     },
-    "contributors/": {
+    "/contributors/": {
       "get": {
         "description": "",
         "produces": [
@@ -228,7 +228,7 @@
         }
       }
     },
-    "contributors/{id}": {
+    "/contributors/{id}": {
       "get": {
         "description": "",
         "produces": [
